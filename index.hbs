@@ -1,5 +1,5 @@
 {{!< default}}
- 
+
 {{#contentFor "styles"}}
     <style>
         .owl .owl-prev:before {
@@ -14,7 +14,7 @@
 
 <div class="content-area">
     <main class="site-main">
-        {{#get "tags" limit="all" filter='slug:[together, we, build]'}}
+        {{#get "tags" limit="all" filter='slug:[together, we, build]' order='id asc'}}
             <div class="tag-feed owl" data-count="{{pagination.total}}">
                 {{#foreach tags}}
                     <div class="tag u-placeholder">
